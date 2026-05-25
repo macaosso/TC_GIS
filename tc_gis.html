@@ -136,6 +136,22 @@ body {
   border-radius: 12px;
   font-size: 14px;
 }
+.header { background: #1f3a4d; color: white; padding: 25px 20px; display:flex; align-items:center; }
+.title { font-size: 20px; font-weight: bold; margin-left:10px; }
+.logo { height:40px; }
+
+.forecast-time {font-weight: bold; }
+
+.nav { background: #2d6c94; display: flex; }
+.nav a {
+  color: white;
+  padding: 25px 20px;
+  font-size: 15px
+  text-decoration: none;
+  display: block;
+}
+.nav a:hover { background: #1f4f6d; }
+  
 </style>
 
 </head>
@@ -154,8 +170,24 @@ body {
 ">
   更新時間:
 </div>
-
-<div class="navbar">MSSO 熱帶氣旋路徑預測</div>
+  
+<div class="header">
+  <img src="icons/MSSO.png" class="logo">
+  <div class="title">澳門民間氣象台 MSSO</div>
+  <div class="navbar">MSSO 熱帶氣旋路徑預測</div>
+</div>
+  
+<!-- 🟠 NEW alertips box  <a href="https://macaosso.github.io/MSSOweb/weather.html">天氣資訊</ a>  -->
+  
+<div class="nav">
+  <a href="https://macaosso.github.io/MSSOweb/index.html">首頁</a>
+  <a href="https://macaosso.github.io/Apparent_Temperature/">酷熱指數</a>
+  <a href="https://macaosso.github.io/MSSOweb/cal_dis.html">熱帶氣旋距離計算工具</a> 
+  <a href="https://macaosso.github.io/TC_GIS.html">熱帶氣旋路徑地圖</a> 
+  <a href="https://macaosso.github.io/MSSOweb/tc.html">熱帶氣旋資訊</a>
+  <a href="https://macaosso.github.io/MSSOweb/about.html">關於我們</a>
+</div>
+  
 <div id="map"></div>
 
 <div class="legend">
