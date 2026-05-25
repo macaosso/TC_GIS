@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MSSO 熱帶氣旋路徑預測</title>
+<title>熱帶氣旋路徑預測</title>
 
 <!-- ✅ FIXED CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -151,6 +151,63 @@ body {
   display: block;
 }
 .nav a:hover { background: #1f4f6d; }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* header */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .logo {
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  /* navigation */
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    flex: 1 1 50%;   /* 2 per row */
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  /* content boxes */
+  .box,
+  .forecast-box {
+    margin: 10px;
+  }
+
+  .content-yellow,
+  .content-red,
+  .forecast-content {
+    font-size: 14px;   /* bigger text */
+    padding: 15px;
+  }
+
+  /* forecast titles */
+  .forecast-title {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  /* update time */
+  .forecast-time {
+    font-size: 12px;
+    margin: 10px;
+  }
+
+}
   
 </style>
 
@@ -172,9 +229,9 @@ body {
 </div>
   
 <div class="header">
-  <img src="icons/MSSO.png" class="logo">
+  <img src="MSSO.png" class="logo">
   <div class="title">澳門民間氣象台 MSSO</div>
-  <div class="navbar">MSSO 熱帶氣旋路徑預測</div>
+  <div class="navbar">熱帶氣旋路徑預測</div>
 </div>
   
 <!-- 🟠 NEW alertips box  <a href="https://macaosso.github.io/MSSOweb/weather.html">天氣資訊</ a>  -->
